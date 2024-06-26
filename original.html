@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista.io</title>
+    <style>
+        body {
+            background-color: #181818;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #282828;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            display: flex;
+            padding: 100px 30px;
+            gap: 50px;
+        }
+
+        .hero-left {
+            width: 50%;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .hero-left::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-left h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero-left p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .hero-right {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .card {
+            background-color: #282828;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .card h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .card .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            background-color: #383838;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+
+        .icon svg {
+            width: 30px;
+            height: 30px;
+            fill: #FF5A5A;
+        }
+
+        .cta {
+            background-color: #FF5A5A;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .cta:hover {
+            background-color: #E53E3E;
+        }
+
+        .chat-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #FF5A5A;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .chat-button:hover {
+            background-color: #E53E3E;
+        }
+
+        .chat-button svg {
+            width: 20px;
+            height: 20px;
+            fill: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">VISTA.IO</div>
+        <nav>
+            <a href="#">Solutions</a>
+            <a href="#">Vision</a>
+            <a href="#">Programs</a>
+            <a href="#">Blog</a>
+            <a href="#" class="cta">Log In</a>
+            <a href="#" class="cta">Get Started</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-left" style="background-image: url('https://cdn.pixabay.com/photo/2016/05/18/00/11/digital-1400663_960_720.jpg');">
+            <h1>Let Your Data Take Your Business to Higher Grounds</h1>
+            <p>I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font.</p>
+        </div>
+        <div class="hero-right">
+            <div class="card">
+                <h2>Modernization</h2>
+                <p>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 15v-3h-2v3h2zm0-7v-3h-2v3h2zm-8 0v-3h-2v3h2zm-4 4v-3h-2v3h2zm-8 0v-3h-2v3h2zm0-7v-3h-2v3h2zm-4 4v-3h-2v3h2zm-8 0v-3h-2v3h2zm8 7v-3h-2v3h2zm0-7v-3h-2v3h2zm-8 0v-3h-2v3h2zm-4 4v-3h-2v3h2z" fill="none" stroke="#FF5A5A" stroke-width="2"/></svg>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Data Science Acceleration</h2>
+                <p>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19.5 11.25h-3.75v2.5h3.75v2.5h-3.75v2.5h3.75v2.5h-3.75v-2.5h3.75v-2.5h-3.75v-2.5h3.75v-2.5h-3.75zM19.5 11.25h-3.75v2.5h3.75v2.5h-3.75v2.5h3.75v2.5h-3.75v-2.5h3.75v-2.5h-3.75v-2.5h3.75v-2.5h-3.75z" fill="none" stroke="#FF5A5A" stroke-width="2"/></svg>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Versatility in Application</h2>
+                <p>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 22c1.65 0 3-1.35 3-3s-1.35-3-3-3-3 1.35-3 3 1.35 3 3 3zm6-9c0 2.76-2.24 5-5 5s-5-2.24-5-5 2.24-5 5-5 5 2.24 5 5z" fill="none" stroke="#FF5A5A" stroke-width="2"/></svg>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Full Customer Journey</h2>
+                <p>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3zm0 18c1.65 0 3-1.35 3-3s-1.35-3-3-3-3 1.35-3 3 1.35 3 3 3zm-9 6c0 2.76-2.24 5-5 5s-5-2.24-5-5 2.24-5 5-5 5 2.24 5 5zm15 0c0 2.76-2.24 5-5 5s-5-2.24-5-5 2.24-5 5-5 5 2.24 5 5z" fill="none" stroke="#FF5A5A" stroke-width="2"/></svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button class="chat-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12h-2v-2h2v2zm0-4h-2v-2h2v2z" fill="none" stroke="#FF5A5A" stroke-width="2"/></svg>
+    </button>
+</body>
+</html>
