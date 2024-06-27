@@ -1,0 +1,10 @@
+<div class="video-containere">
+                <h2>Translate Sign Language to English</h2>
+                <div class = "video-container" >
+                    <video id="webcam" autoplay></video>
+                </div>
+            
+                <div class="translation-container">
+                    <p id="translation">Translation will appear here</p>
+                </div>
+            </div>

@@ -14,26 +14,33 @@ h1 {
     color: #f00;
 }
 
-.translator {
-    display: flex;
-    flex-direction: column;
+h2 {
+    text-align: center;
+}
+
+.translator-grid {
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.5);
+    grid-template-columns: auto auto;
+    grid-template-rows: 300px;
+    gap: 10px;
+
+    /* display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 20px;
+    background-color: aliceblue; */
 }
 
 .video-container {
-    width: 400px;
-    height: 300px;
-    border: 1px solid #fff;
+    background-color: rgb(255, 255, 255, 0.5);
+    border: 10px solid #91982b;
 }
 
 .translation-container {
-    margin-top: 20px;
-    width: 400px;
-    height: 300px;
-    border: 1px solid #fff;
-    text-align: center;
-    font-size: 1.5em;
+    background-color: rgb(255, 255, 255, 0.5);
+    border: 10px solid #9fa433;
+    text-align: center ;
     color: #f00;
 }
