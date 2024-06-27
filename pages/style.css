@@ -58,10 +58,10 @@ nav li a:hover {
 }
 
 .hero {
-    background-image: url("resources/home_bg.png");
+    background-image: url("hero-image.jpg");
     background-size: cover;
     background-position: center;
-    min-height: 700px;
+    min-height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
