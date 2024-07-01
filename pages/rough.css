@@ -9,6 +9,33 @@ header {
     padding: 20px;
     text-align: center;
 }
+.container {
+    max-width: 12000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav li a:hover {
+    color: #f00;
+}
 
 h1 {
     color: #f00;
